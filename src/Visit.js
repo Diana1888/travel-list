@@ -37,7 +37,7 @@ const openInNewTab =(url) =>{
                         <p>{description}</p>
                     </div>
                     <div className="container">
-                        <a onClick={()=> openInNewTab(link)}>Official website</a>
+                        <button className="btn-link" onClick={()=> openInNewTab(link)}>Official website</button>
                     </div>
                     <div className="container">
                         <button className="btn-click" onClick={() => removePlace(id)}>Remove attraction</button>

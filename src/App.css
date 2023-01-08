@@ -24,21 +24,12 @@ body{
   margin: 15px auto;
 }
 
-button:hover{
+.btn:hover, .btn-click:hover{
   background-color: #0081C9;
   cursor: pointer;
 }
 
-a{
-  font-size: 20px;
-  text-decoration: none;
-}
 
-a:hover{
-  text-decoration: underline;
-  color: #0081C9;
-  cursor: pointer;
-}
 h1{
   font-size: 40px;
 }
@@ -50,4 +41,17 @@ h2{
 p{
   margin: 15px 40px;
   font-size: 18px;
+}
+
+.btn-link{
+  background-color: #F7F5EB;
+  border: none;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.btn-link:hover{
+  cursor: pointer;
+  background-color: none;
+  color: #0081C9;
 }
