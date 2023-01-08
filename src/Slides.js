@@ -4,7 +4,7 @@ import './App.css';
 
 function Slides() {
     const [pictures, setPictures] = useState(0);
-    const {id, photo} = pic[pictures];
+    const {photo} = pic[pictures];
 
   const nextPhoto = () => {
     setPictures (pictures => {
@@ -31,7 +31,7 @@ function Slides() {
         <div>
         <div className='container'>
           <button className='btn' onClick={previousPhoto}>&#8249;</button>
-            <img src={photo} width="600px" alt='photo'/>
+            <img src={photo} width="600px" alt='slides'/>
             
             <button className='btn' onClick={nextPhoto}>&#8250;</button>
         </div>

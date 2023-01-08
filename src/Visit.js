@@ -12,6 +12,10 @@ const removePlace = (id) =>{
     setPlace(newPlace)
 }
 
+const openInNewTab =(url) =>{
+    window.open(url,  '_blank', 'noreferrer');
+}
+
     return(
         <div>
 
@@ -33,7 +37,7 @@ const removePlace = (id) =>{
                         <p>{description}</p>
                     </div>
                     <div className="container">
-                        <a href={link} target="_blank">Official website</a>
+                        <a onClick={()=> openInNewTab(link)}>Official website</a>
                     </div>
                     <div className="container">
                         <button className="btn-click" onClick={() => removePlace(id)}>Remove attraction</button>
